@@ -39,6 +39,7 @@ Node::~Node(){
 Node* ariel::Tree::getRoot(){
     return root_;
 }
+//taken from https://gist.github.com/mycodeschool/9465a188248b624afdbf
 Node* ariel::Tree::insert(int x, Node* t){
     if(t == NULL)
     {
@@ -120,6 +121,7 @@ void ariel::Tree::remove(int i){
     root_ = remove(root_ , i);
     size_--;
 }
+//taken from https://gist.github.com/mycodeschool/9465a188248b624afdbf
 Node* ariel::Tree::remove(Node* root, int data){
     if(root == NULL) return root; 
 	else if(data < root->getValue()) root->setLeft(remove(root->getLeft(),data));
