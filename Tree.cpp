@@ -179,5 +179,6 @@ int ariel::Tree::root(){
     }
 ariel::Tree::~Tree(){
      root_ = makeEmpty(root_);
+     size_ = 0;
 }
 
